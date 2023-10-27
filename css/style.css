@@ -5,3 +5,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+body::-webkit-scrollbar{
+    display: none;
+    object-fit:fill;
+}
+
+/* Navbar */
+:is(.navbar){
+    position: fixed;
+    top: 0;
+}
+.nav-link{
+    color: rgba(255, 255, 255, .8);
+}
+img[alt="Netflix"]{
+    height: 3rem;
+}
+img[alt="User"]{
+    height: 3rem;
+    aspect-ratio: 1/1;
+}
+.featured video{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+.nav-item:hover{
+    color: rgba(255, 255, 255, 1);
+}
+.searchicon{
+    color: rgb(179, 179, 179);
+    height: 5em;
+    width: 3rem;
+}
+.bi-search{
+    font-size: 1.5em;
+}
+img[alt="chromecast"]{
+    height: 1.3em;
+    margin: 1rem;
+}
+
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    background: #222;
+}
+.dropdown-item {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    color: white;
+}
