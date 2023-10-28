@@ -1,0 +1,48 @@
+/* external font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* body */
+body {
+  background-color: black;
+  color: white;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo */
+.netflixLogo img {
+  width: 167px;
+  height: 45px;
+}
+#sign-inform{
+  border: 10px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 500px;
+  padding: 20px 30px;
+  gap: 3rem;
+}
+:is(label[for="rememberMe"], .help) {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 13px;
+  font-weight: 400;
+}
+#rememberMe{
+  left: 0;
+  opacity: .5;
+  top: 0;
+}
