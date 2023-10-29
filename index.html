@@ -32,17 +32,22 @@
     </div>
 
     <main>
+      <div class="background">
+        <img
+          src="./Resources/ZA-en-20231023-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          alt="background"
+        />
+        <div class="blackfade"></div>
+      </div>
       <div class="sign-in">
-        <h1>Sign In</h1>
-        <form id="sign-inform" action="/pages/home.html">
+        <form id="sign-inform" action="./html/Home.html">
+          <h1>Sign In</h1>
           <input
             type="text"
             placeholder="Email or phone number"
-            id="username"
-            name="username"
+            id="mail-number"
+            name="mail-number"
             class="text-input"
-            minlength="5"
-            maxlength="10"
             required
           />
           <input
@@ -54,13 +59,30 @@
             maxlength="10"
             required
           />
-          <button type="submit" id="Btn" class="sign-in">Sign In</button>
-          <div class="container-fluid p-0 align-items-center">
-            <input type="checkbox" id="rememberMe" />
-            <label for="rememberMe">Remember me</label>
-            <a class="help" href="#">Need help?</a>
+          <button type="submit" id="Btn" class="sign-inbtn">Sign In</button>
+          <div
+            class="container-fluid d-flex justify-content-between p-0 align-items-center"
+          >
+            <div class="rem d-flex pt-2">
+              <input type="checkbox" id="rememberMe" />
+              <label for="rememberMe">Remember me</label>
+            </div>
+            <a class="help mt-2" href="#">Need help?</a>
           </div>
         </form>
+        <div class="sign-upsctn">
+          <div class="sign-up">
+            New to Netflix?
+            <a href="#" id="signUp">Sign up now</a>.
+          </div>
+          <div class="recap">
+            <p>
+              This page is protected by Google reCAPTCHA to ensure you're not a
+              bot.
+              <button>Learn more</button>
+            </p>
+          </div>
+        </div>
       </div>
     </main>
 
